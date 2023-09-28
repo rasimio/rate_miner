@@ -9,16 +9,3 @@ services:
       dockerfile: rate_miner/bin/server/Dockerfile
     restart: unless-stopped
     container_name: fiery_server
-  db:
-    image: postgres:latest
-    volumes:
-      - ./migrations/courses.sql:/server-endtrypoint-initdb.d/cp.sql
-      - ./db:/var/lib/postgresql/data
-    container_name: fiery_arbitrage
-    ports:
-      - 5638:5432
-    environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_DB=fiery_arbitrage
-      - POSTGRES_PASSWORD=cDtKCJfFgyP6ZXzg
-    restart: unless-stopped
