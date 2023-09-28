@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "rate-miner"
+version = "0.0.1"
+description = ""
+authors = ["tessatiu <gadjiew.rasim@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+dependency-injector = "^4.41.0"
+cryptography = "^41.0.4"
+fastapi = "^0.103.1"
+uvicorn = "^0.23.2"
+python-dotenv = "^1.0.0"
+pyotp = "^2.9.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
