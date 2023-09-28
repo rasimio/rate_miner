@@ -4,9 +4,7 @@ from dotenv import load_dotenv
 
 
 class EliseConfigurator:
-    def __init__(self, data_path: str):
-        self.data_path = data_path
-        self.wallets: Dict = {}
+    def __init__(self):
         self.load()
 
     @staticmethod
