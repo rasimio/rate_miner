@@ -8,6 +8,6 @@ from rate_miner.internal import selector
 class Main(containers.DeclarativeContainer):
     _encryption_manager = providers.Singleton(EncryptionManager)
     _selector = providers.Factory(selector.Selector, )
-    _application = providers.Factory(
-        Application, encryption_manager=_encryption_manager
+    application = providers.Factory(
+        Application, selector=_selector,
     )

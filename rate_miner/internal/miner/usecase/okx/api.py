@@ -2,7 +2,7 @@ import time
 from abc import ABC
 from typing import Optional
 from rate_miner.internal.miner import UseCase, Exchanger
-from rate_miner.internal.miner import models as miner_structures
+from rate_miner.internal.miner import dto as miner_structures
 
 
 class OkxAPI(UseCase, ABC):

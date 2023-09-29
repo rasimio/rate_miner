@@ -6,6 +6,6 @@ services:
       - "9670:8000"
     build:
       context: .
-      dockerfile: rate_miner/bin/server/Dockerfile
+      dockerfile: rate_miner/bin/miner/Dockerfile
     restart: unless-stopped
-    container_name: fiery_server
+    container_name: rate_miner

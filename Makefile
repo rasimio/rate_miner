@@ -9,14 +9,14 @@ endif
 ## Default target
 .DEFAULT_GOAL := serve
 
-## Build api server containers
+## Build api miner containers
 docker_up:
 	docker-compose up --build
 
-## Start project without server
+## Start project without miner
 .PHONY: run
 run: install_requirements
-	: # Activate venv and run flask server
+	: # Activate venv and run flask miner
 	poetry run python run.py $(ARGS)
 
 

@@ -1,6 +1,6 @@
 import time
 from ..const import Exchanger
-from ..models import PairShot, PairTimeLine
+from ..dto import PairShot, PairTimeLine
 from abc import ABC, abstractmethod
 from typing import Dict, List, Optional
 
