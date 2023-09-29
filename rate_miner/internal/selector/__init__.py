@@ -1,3 +1,3 @@
-from .api import Selector
+from rate_miner.internal.selector.handlers.http import Selector
 
-__all__ = ["Selector", "structures"]
+__all__ = ["Selector"]

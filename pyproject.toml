@@ -15,7 +15,8 @@ python-dotenv = "^1.0.0"
 pyotp = "^2.9.0"
 asyncpg = "^0.28.0"
 psycopg2 = "^2.9.8"
-
+pyyaml = "^6.0.1"
+dacite = "^1.8.1"
 
 [build-system]
 requires = ["poetry-core"]

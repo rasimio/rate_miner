@@ -5,7 +5,13 @@ import asyncpg
 
 
 class Postgresql:
-    def __init__(self, host: str, port: int, user: str, password: str, db: str) -> None:
+    def __init__(self,
+                 host: str,
+                 port: int,
+                 user: str,
+                 password: str,
+                 db: str
+                 ) -> None:
         self.host = host
         self.port = port
         self.user = user

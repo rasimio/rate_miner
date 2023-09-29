@@ -6,6 +6,6 @@ services:
       - "9670:8000"
     build:
       context: .
-      dockerfile: rate_miner/bin/miner/Dockerfile
+      dockerfile: bin/miner/Dockerfile
     restart: unless-stopped
     container_name: rate_miner

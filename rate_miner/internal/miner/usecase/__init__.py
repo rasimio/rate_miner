@@ -29,5 +29,5 @@ class UseCase(ABC):
 
     @abstractmethod
     async def save(self,
-                   pair: Optional[PairShot, PairTimeLine] = None) -> None:
+                   pair: Optional[PairShot] = None) -> None:
         pass

@@ -16,10 +16,10 @@ class RoutableMeta(type):
     the Routable constructor then uses to add the endpoints to its router."""
 
     def __new__(
-        cls: Type[type],
-        name: str,
-        bases: Tuple[Type[Any]],
-        attrs: Dict[str, Any],
+            cls: Type[type],
+            name: str,
+            bases: Tuple[Type[Any]],
+            attrs: Dict[str, Any],
     ) -> "RoutableMeta":
         endpoints: List[EndpointDefinition] = []
         for v in attrs.values():

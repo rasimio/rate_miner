@@ -1,3 +1,7 @@
+### CFG
+rate_miner/config/config.yml
+
+
 ### VisualStudioCode template
 .vscode/*
 !.vscode/settings.json
