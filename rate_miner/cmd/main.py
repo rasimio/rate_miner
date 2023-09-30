@@ -1,7 +1,6 @@
 from dependency_injector.wiring import Provide, inject
 from rate_miner.pkg.application import Application
 from rate_miner import internal
-import rate_miner
 
 
 @inject

@@ -1,0 +1,14 @@
+Server:
+  AppVersion: "1.0.0"
+  Host: "0.0.0.0"
+  Port: 8092
+
+PostgreSQL:
+  Host: ''
+  Port: 5432
+  User: ''
+  Password: ''
+  DB: ''
+
+BlockChain:
+  ETH: "url of ethereum node"

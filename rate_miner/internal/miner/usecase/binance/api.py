@@ -6,6 +6,9 @@ from rate_miner.internal.miner import dto as miner_structures
 
 
 class BinanceAPI(UseCase, ABC):
+    def __init__(self):
+        super(BinanceAPI, self).__init__(name=Exchanger.BINANCE)
+
     async def get(self,
                   token_from: str,
                   token_to: str,

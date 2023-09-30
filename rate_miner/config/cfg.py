@@ -21,6 +21,11 @@ class PostgreSQL:
 
 
 @dataclass
+class BlockChain:
+    ETH: str
+
+
+@dataclass
 class Settings:
     Server: Server
     PostgreSQL: PostgreSQL
@@ -29,5 +34,4 @@ class Settings:
 def load() -> Settings:
     with open("rate_miner/config/config.yml", "r") as y:
         data: Dict = yaml.load(y, Loader=yaml.FullLoader)
-        print("Read successful")
     return from_dict(data_class=Settings, data=data)

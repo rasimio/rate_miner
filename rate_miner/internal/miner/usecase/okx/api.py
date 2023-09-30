@@ -6,6 +6,9 @@ from rate_miner.internal.miner import dto as miner_structures
 
 
 class OkxAPI(UseCase, ABC):
+    def __init__(self):
+        super(OkxAPI, self).__init__(Exchanger.OKX)
+
     async def get(self,
                   token_from: str,
                   token_to: str,

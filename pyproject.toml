@@ -17,6 +17,8 @@ asyncpg = "^0.28.0"
 psycopg2 = "^2.9.8"
 pyyaml = "^6.0.1"
 dacite = "^1.8.1"
+web3 = "^6.10.0"
+uniswap-python = "^0.7.1"
 
 [build-system]
 requires = ["poetry-core"]
