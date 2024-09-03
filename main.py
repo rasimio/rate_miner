@@ -7,6 +7,7 @@ from src import internal
 def main(application: Application = Provide[internal.Main.application]):
     application.execute_instruction()
 
+# entrypoint of application
 
 if __name__ == "__main__":
     Main = internal.Main()
