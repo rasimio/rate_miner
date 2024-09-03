@@ -8,4 +8,4 @@ services:
       context: .
       dockerfile: bin/miner/Dockerfile
     restart: unless-stopped
-    container_name: rate_miner
+    container_name: src

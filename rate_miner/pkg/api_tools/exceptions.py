@@ -1,2 +1,0 @@
-class UrlLabelAlreadyExistsException(Exception):
-    pass
